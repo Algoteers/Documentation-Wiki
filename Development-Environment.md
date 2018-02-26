@@ -10,4 +10,4 @@ Download and install the [[Azure Storage Explorer|https://azure.microsoft.com/en
 
 The following screen should pop up when you launch Azure Storage Explorer:
 
-![](Documentation/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-01.png )
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-01.png]]
