@@ -4,6 +4,6 @@ There are two GitHub Organizations you need to be familiar with:
 
 * [[AAMasters|https://github.com/AAMasters]]: Its a showcase GitHub organization similar to the one each Dev Team needs to create for themselves. It features several examples of bots, each in their corresponding repository.
 
-# Setting Up a Dev Team Organization
+## Setting Up a Dev Team Organization
 
 The very first step is setting up a GitHub organization named after your own Dev Team. Make sure the name of the organization starts with “AA”, just like in the above example AAMasters. Also make sure that the phrase “Advanced Algos” is part of the organization’s description. The platform checks for those two elements to find AA Dev Teams in GitHub.
