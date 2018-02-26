@@ -1,4 +1,8 @@
+## Step 0: Node.js
+
 Before we start, make sure you have Node.js installed. If you don’t, please [[download and install Node.js|https://nodejs.org/en/download/]].
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Node-js-01.png]]
 
 ## Step 1: Azure Storage Explorer
 
