@@ -1,3 +1,5 @@
+# Introduction
+
 Advanced Algos is a startup developing the AA Platform and hosting trading bots competitions.
 
 The AA Platform provides the environment to develop bots, and once bots are ready to go live, runs them in the cloud.
