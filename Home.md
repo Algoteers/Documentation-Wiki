@@ -1,8 +1,9 @@
-# Introduction
+﻿# Introduction
 
 Advanced Algos is a startup developing the AA Platform and hosting trading bots competitions.
 
 The AA Platform provides the environment to develop bots, and once bots are ready to go live, runs them in the cloud.
+
 AA Bots are open source projects in Github, programed in JavaScript. The platform calls bots and puts them to run in specific time intervals. Bots consume services from the platform and from other bots, and at the same time, produce an output that is stored in the cloud (to be consumed by other bots). There are three different types of bots:
 
 * **AA Extraction Bots**: They extract raw trades and order books data from exchanges and store it in a standardized format for other bots to consume.
