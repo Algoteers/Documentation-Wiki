@@ -67,8 +67,18 @@ Go to _File > Clone Repository_
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/GitHub-Desktop-01.png]]
 
-Click on the URL tab and paste the repository URL in corresponding field: https://github.com/AdvancedAlgos/AACloudPlatform. Choose where in your local machine GitHub should copy the files.
+Click on the URL tab and paste the repository URL in corresponding field: 
+
+```
+https://github.com/AdvancedAlgos/AACloudPlatform
+```
+
+Choose where in your local machine GitHub should copy the files.
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/GitHub-Desktop-02.png]]
 
 Once you clone the repository, GitHub desktop keeps track of the changes that may occur in the files in your local machine and helps synchronize the changes with the online repository via commits and pushes. 
+
+## Step 4: Clone Bot Examples
+
+There are several bots to play with and many more will be available soon from Dev Teams under their own organizations. In the meantime, the ones in AAMaster should suffice. Clone them in your local machine.
