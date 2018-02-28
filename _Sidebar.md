@@ -2,4 +2,4 @@
 
 #### [[Getting Started Guide|overview]]
 * [[Overview]]
-* [[Development Environment]]
+* [[Setting up your Development Environment]]
