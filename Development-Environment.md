@@ -1,10 +1,10 @@
-## Step 0: Node.js
+## Step 1: Node.js
 
 Before we start, make sure you have Node.js installed. If you don’t, please [[download and install Node.js|https://nodejs.org/en/download/]].
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Node-js-01.png]]
 
-## Step 1: Azure Storage Explorer
+## Step 2: Azure Storage Explorer
 
 Bots consume and store data in the Microsoft Azure cloud. This tool will allow you to browse and manage data.
 
@@ -14,4 +14,41 @@ Download and install the [[Azure Storage Explorer|https://azure.microsoft.com/en
 
 The following screen should pop up when you launch Azure Storage Explorer:
 
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-02.png]]
+
+Select _Use a connection string or a shared access signature URI_ and click **Next**.
+
+Select _Use a connection string_ and paste the following connection string in the corresponding field to connect to the testnet storage:
+
+```
+DefaultEndpointsProtocol=https;AccountName=aatestnet;AccountKey=rQRuD8KeD0upqcN9532zqZTknKwkYJDpGzkATGptk9lIEovkLchdOGOJVld26cUjpzTA4enxsxpCB33B0pOZRg==;EndpointSuffix=core.windows.net
+```
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-03.png]]
+
+Click **Next** and **Connect **in the following screen.
+
+> **NOTE**: Please bear in mind that this connection method is provisional and will soon be changed for a secure one.
+
+Storage Explorer will load on the following screen:
+
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-01.png]]
+
+### Data Structure
+
+Spend some time exploring and getting familiar with the data structure under the _File Shares_ folder.
+
+The data is stored under the following folder tree structure:
+
+- ExchangeName
+  - BotName
+    - dataSet.V1
+      - Output
+        - This is the folder where bots store their data outputs.
+      - Processes
+        - This folder holds one child folder per each process by each bot.
+        - Each child folder holds a control checkpoint file named _Status.Report.”MARKETPAIR”.json_ (e.g.: _Status.Report.USDT_BTC.json_). This checkpoint helps the process restart from a certain point in the event of an unexpected interruption. Bots are free to store data in any way developers see fit. We have found in some cases it is best to organize data in the following format: YEAR > MONTH > DAY > HOUR > MINUTE.
+
+>
+> **NOTE**: Please be mindful of the way you use storage space. While using the AA Platform is currently free of charge for you, there are expenses related to storage volumes that the project needs to pay for.
+>
