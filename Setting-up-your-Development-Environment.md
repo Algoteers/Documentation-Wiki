@@ -81,4 +81,46 @@ Once you clone the repository, GitHub desktop keeps track of the changes that ma
 
 ## Step 4: Clone Bot Examples
 
-There are several bots to play with and many more will be available soon from Dev Teams under their own organizations. In the meantime, the ones in AAMaster should suffice. Clone them in your local machine.
+There are several bots to play with and many more will be available soon from Dev Teams under their own organizations. In the meantime, the ones in [[AAMaster|https://github.com/AAMasters]] should suffice. Clone them in your local machine.
+
+## Step 5: Test Run
+
+### Configure Which Bot to Run
+
+> NOTE: For the sake of this guide, we will use Microsoft Visual Studio as the IDE of choice. However, the platform is IDE-agnostic, thus you should be able to use your preferred IDE, as usual. If that is the case, we would be thrilled if you could share screen shots of your own set up so that we can add them here. Send any contributions to feedback@advancedalgos.com.
+
+We will first configure which bot to run. Open _AACloudPlatform.sln_ in Visual Studio. In the Solution Explorer window, scroll down and open _this.vm.config.json_. Enter one of the example bot’s name and path in the config file as shown below:
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-01.png]]
+
+### Configure Process
+
+Now we need to tell the platform which process to run. Bots may have multiple process. Each of them is defined in a file named _Interval.js_, located inside a folder in the root of the bot’s repository, as shown below:
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Local-Files-01.png]]
+
+In the example above, the bot has two processes: _Multi-Period-Daily_ and _Multi-Period-Market_. Choose either and copy the exact folder name. Back in Visual Studio, click on the AACloudPlatform node and paste the process name as the value for the Script arguments field:
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-02.png]]
+
+Also, make sure you have the proper path in the Working directory attribute. We are now ready to execute.
+
+### Execute
+
+Once running, the process should call the command prompt and start showing some activity:
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Command-Prompt-01.png]]
+
+### Debugging
+
+By now you should be able to run any bot in your local environment and use typical debugging tools and procedures should anything go wrong.
+
+Open the _IntervalExecutor.js_ module and place a breakpoint in the following line:
+
+```
+fileProcessingInterval.start(loopControl);
+```
+
+Now, run the IDE. When execution halts, press F11 to step into the module _Interval.js_ that will be loaded from the configured bot process folder. Once there you can set more breakpoints or debug the module step by step.
+
+
