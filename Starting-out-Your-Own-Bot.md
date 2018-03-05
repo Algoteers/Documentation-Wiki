@@ -78,6 +78,46 @@ Clone the [[AAPlatform|https://github.com/AdvancedAlgos/AAPlatform]] repository 
           "repo": "AAMariam-Trading-Bot",
           "configFile": "this.bot.config.json"
         }
+      ],
+      "plotters": [
+        {
+          "description": "Plots traditional red and green candles.",
+          "repo": "Plotters-Candles-Volumes",
+          "moduleName": "Candles",
+          "target": "Timeline"
+        },
+        {
+          "description": "Plots volumes separated in buy and sell.",
+          "repo": "Plotters-Candles-Volumes",
+          "moduleName": "Volumes",
+          "target": "Timeline"
+        },
+        {
+          "description": "Plots Candle Stairs patterns.",
+          "repo": "Plotters-Stairs-Patterns",
+          "moduleName": "CandleStairs",
+          "target": "Timeline"
+        },
+        {
+          "description": "Plots Volume Stairs patterns.",
+          "repo": "Plotters-Stairs-Patterns",
+          "moduleName": "VolumeStairs",
+          "target": "Timeline"
+        },
+        {
+          "description": "Plots a trading history.",
+          "repo": "Plotters-Trading",
+          "moduleName": "History",
+          "target": "Timeline"
+        },
+        {
+          "description": "Plots trading decitions in an easy to understand way.",
+          "repo": "Plotters-Trading",
+          "moduleName": "Details",
+          "target": "Timeline"
+        }
+      ]
+    }
 ```
 
 Copy the piece of code and replicate it immediately below the closing key. Modify the pasted code to incorporate the details of your own GitHub organization and your own bots. Once you are finished, commit the changes and submit a pull request. Someone in the AdvancedAlgos Organization will analyze your request and pull it into the main branch's code if everything looks right.
