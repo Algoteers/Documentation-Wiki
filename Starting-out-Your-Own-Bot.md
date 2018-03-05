@@ -20,9 +20,9 @@ e.g.: _AAOlivia-Indicator-Bot_
 
 ### Rename Solution
 
-Now rename the solution using the following syntax: “**AA**”+”**BotName**”+”**.sln**”
+Now rename the solution using the following syntax: “**AA**”+“**BotName**”+“**-TypeOfBot-**”+“**Bot**”+“**.sln**”
 
-e.g.: _AAOlivia.sln_
+e.g.: _AAOlivia-Indicator-Bot.sln_
 
 ### Remove .git Folder
 
