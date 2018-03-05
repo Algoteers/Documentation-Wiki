@@ -120,6 +120,6 @@ Clone the [[AAPlatform|https://github.com/AdvancedAlgos/AAPlatform]] repository 
     }
 ```
 
-Copy the piece of code and replicate it immediately below the closing key. Modify the pasted code to incorporate the details of your own GitHub organization and your own bots. Once you are finished, commit the changes and submit a pull request. Someone in the AdvancedAlgos Organization will analyze your request and pull it into the main branch's code if everything looks right.
+Copy the piece of code and replicate it immediately below the closing key. Modify the pasted code to incorporate the details of your own GitHub organization, your own bots and plotters. Once you are finished, commit the changes and submit a pull request. Someone in the AdvancedAlgos Organization will analyze your request and pull it into the main branch's code if everything looks right.
 
 
