@@ -122,7 +122,7 @@ Clone the [[AAPlatform|https://github.com/AdvancedAlgos/AAPlatform]] repository 
 
 Copy the piece of code and replicate it immediately below the closing key. Modify the pasted code to incorporate the details of your own GitHub organization and your own bots.
 
-> You will notice the cofiguration describes _plotters_. We haven't discussed those yet, so simply delete the related segments. 
+> You will notice the configuration describes _plotters_. We haven't discussed those yet, so simply delete the related segments. 
 
 Once you are finished, commit the changes and submit a pull request. Someone in the AdvancedAlgos Organization will analyze your request and pull it into the main branch's code if everything looks right.
 
