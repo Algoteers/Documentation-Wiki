@@ -51,3 +51,4 @@ Now you are good to go. We’ve found the following workflow is quite practical:
 * Code directly in the bot’s solution until the code is fully implemented.
 * Close the bot’s module and go to the cloud platform solution to debug (as explained here). While debugging, the bot’s files will pop up in separate tabs, so that you can edit the code in the process.
 
+> NOTE: Please, bear in mind that the data produced by other bots available in the testnet storage may be inconsistent, incomplete or even faulty. If you are using other bot's dataset as input for your own bots, it might be a good idea to isolate portions of the data and even move it to your local environment to work in isolation temporarily.
