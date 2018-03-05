@@ -87,9 +87,9 @@ There are several bots to play with and many more will be available soon from De
 
 ### Configure Which Bot to Run
 
-> NOTE: For the sake of this guide, we will use Microsoft Visual Studio as the IDE of choice. However, the platform is IDE-agnostic, thus you should be able to use your preferred IDE, as usual. If that is the case, we would be thrilled if you could share screen shots of your own set up so that we can add them here. Send any contributions to feedback@advancedalgos.com.
+> NOTE: For the sake of this guide, we will use Microsoft Visual Studio as the IDE of choice. However, the platform is IDE-agnostic, thus you should be able to use your preferred IDE, as usual. If that is the case, we would be thrilled if you could share screen shots of your own set up so that we can add them here. Send any contributions to feedback@advancedalgos.com or submit a pull request with a new version of this page incorporating them.
 
-We will first configure which bot to run. Open _AACloudPlatform.sln_ in Visual Studio. In the Solution Explorer window, scroll down and open _this.vm.config.json_. Enter one of the example bot’s name and path in the config file as shown below:
+We will first configure which bot to run. Open _AACloudPlatform.sln_. In the Solution Explorer window, scroll down and open _this.vm.config.json_. Enter one of the example bot’s name and path in the config file as shown below:
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-01.png]]
 
@@ -99,7 +99,7 @@ Now we need to tell the platform which process to run. Bots may have multiple pr
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Local-Files-01.png]]
 
-In the example above, the bot has two processes: _Multi-Period-Daily_ and _Multi-Period-Market_. Choose either and copy the exact folder name. Back in Visual Studio, click on the AACloudPlatform node and paste the process name as the value for the Script arguments field:
+In the example above, the bot has two processes: _Multi-Period-Daily_ and _Multi-Period-Market_. Choose either and copy the exact folder name. Back in your preferred IDE, click on the AACloudPlatform node and paste the process name as the value for the Script arguments field:
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-02.png]]
 
