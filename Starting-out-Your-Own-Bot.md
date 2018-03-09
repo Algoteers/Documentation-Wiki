@@ -37,7 +37,6 @@ Now is a good time to go to GitHub and add a new local repository within your ow
 Next, open the recently renamed solution in Visual Studio and make the following changes:
 
 * In the Solution Explorer window:
-  - Change the name of the project.
   - You may want to rename one of the existing processes (the one you are planning to use).
   - Delete the remaining original unused processes, if any.
 * Open _this.bot.config.json_ and update:
