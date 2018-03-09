@@ -97,7 +97,7 @@ You need to update that segment of the config with the following things in mind:
  - The process name in case you decided to change it
  - Delete the config for any unused processes
 
-Now scroll down to the bottom of the config and replace the string concerning to the storage account with the one you got from us on the [[previous title|#Request a Storage Account]].
+Now scroll down to the bottom of the config and replace the string concerning to the storage account with the one you got from us on the previous title.
 
 ## Step 3: Start Coding
 
