@@ -103,7 +103,7 @@ Now we need to tell the platform which process to run. Bots may have multiple pr
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Local-Files-01.png]]
 
-In the example above, the bot has two processes: _Multi-Period-Daily_ and _Multi-Period-Market_. Choose either and copy the exact folder name. Back in your preferred IDE, click on the AACloudPlatform node and paste the process name as the value for the Script arguments field:
+In the example above, the bot has two processes: _Multi-Period-Daily_ and _Multi-Period-Market_. Choose either and copy the exact folder name. Back in your preferred IDE, click on the Project node and paste the process name as the value for the Script arguments field:
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-02.png]]
 
