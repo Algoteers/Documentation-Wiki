@@ -139,6 +139,4 @@ let filePath
 
 ### Logs
 
-Bots log key aspects of their activity in files stored locally under the logs folder in the AACloudPlatform repository. In the particular case of the bot in this example, the logs are available here:
-
-[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Local-Files-02.png]]
+Upon execution, the platform creates a folder named _Logs_ right outside the repository. Thus, you will find the Logs folder in the same directory as the AACloudPlatform. Each bot stores logs in its own sub-folders.
