@@ -99,6 +99,14 @@ You need to update that segment of the config with the following things in mind:
 
 Now scroll down to the bottom of the config and replace the string concerning to the storage account with the one you got from us on the previous title. Save the file when you are done.
 
+### Configure the AACloudPlatform
+
+We will first configure which bot to run. Open _AACloudPlatform.sln_. In the Solution Explorer window, scroll down and open _this.vm.config.json_. Enter your bot’s name and path in the config file as shown below:
+
+[[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-01.png]]
+
+Now we need to tell the platform which process to run. Click on the AACloudPlatform node and enter the process name as the value for the Script arguments field.
+
 ## Step 3: Start Coding
 
 Now you are good to go. We’ve found the following workflow is quite practical:
