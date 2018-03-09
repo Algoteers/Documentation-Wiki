@@ -116,9 +116,9 @@ Now you are good to go. We’ve found the following workflow is quite practical:
 
 > NOTE: Please, bear in mind that the data produced by other bots available in the testnet storage may be inconsistent, incomplete or even faulty. If you are using other bot's dataset as input for your own bots, it might be a good idea to isolate portions of the data and even move it to your local environment to work in isolation temporarily.
 
-## Step 4: Configure Dev Team and Bots to Run in Production
+## Step 4: Configure Dev Team and Bots to Run in the Cloud
 
-Now that your bots are ready and you are happy with the datasets they produce, it is time to register your Dev Team and bots in the AA Platform so that they can run in the production environment using complete input datasets and produce complete outputs. Running in production is not that different from running in the development environment. You can even finish and fine-tune your development while running your bots production.
+Now that your bots are ready and you are happy with the datasets they produce, it is time to register your Dev Team and bots in the AA Platform so that they can run in the cloud. Running in the cloud is not that different from running the bot locally.
 
 ### Configuration File
 
