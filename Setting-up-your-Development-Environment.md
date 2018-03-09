@@ -26,7 +26,7 @@ DefaultEndpointsProtocol=https;AccountName=aatestnet;AccountKey=rQRuD8KeD0upqcN9
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Azure-Storage-Explorer-03.png]]
 
-Click **Next** and **Connect **in the following screen.
+Click **Next** and **Connect** in the following screen.
 
 > **NOTE**: Please bear in mind that this connection method is provisional and will soon be changed for a secure one.
 
