@@ -40,8 +40,14 @@ Next, open the recently renamed solution in Visual Studio and make the following
   - You may want to rename one of the existing processes (the one you are planning to use).
   - Delete the remaining original unused processes, if any.
 * Open _this.bot.config.json_ and update:
-  - The bot’s name.
-  - The process name, deleting config for unused processes.
+  - *displayName* (your bot's name without the AA prefix)
+  - *codeName* (name with the AA prefix; e.g. AAMariam)
+  - *type* (change if appropriate)
+  - *version* (start with 1.0.0)
+  - *devTeam* (your organization's name)
+  - *dataSetVersion* (different versions of bots may use different versions of datasets"
+  - The process name in case you decided to change it
+  - Delete the config for any unused processes
 
 ## Step 3: Start Coding
 
