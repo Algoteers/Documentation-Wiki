@@ -47,7 +47,7 @@ Once you create your key, the system will present it as follows...
 
 ### Creating an API Key File
 
-Next, you will use the information in the API Key to a create a flat file with the following structure:
+Next, you will use the information in the API Key to a create a flat file with the following structure but using your own Key and Secret information:
 
 ```
 { "Key" : "6HS4YUEB-865UY9W4-KGHEHHJ-GH72ETG1", "Secret" : "1a3529851a05439asdasdw63426378ggd65701ac4a5d53c4859aa3511a8aa65acbd7e713bba755d0b1591ebe3a7618a71393ef4d3d11310628e1db"}
