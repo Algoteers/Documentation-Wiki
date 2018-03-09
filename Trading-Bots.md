@@ -1,12 +1,25 @@
-AA Trading Bots have a lot in common with Indicator Bots. They consume indicator's datasets in the quest to implement specific trading strategies and signal the AA Platform for it to place orders with exchanges.
-
-## Step 1: Planning
-
 As usual, a little planning is in order before starting. What kind of trading strategy do you wish to implement? In what markets? What indicators do you need? Is there any existing AA Trading Bot that is similar to what you envision?
 
-Truth be told, there are very few bots in offer at this early stage, but more and more are coming. The idea is to start from a good base, so cloning an existing bot and working on top of it may be a good idea.
+The idea is to start from a solid base: cloning an existing bot and working on top of it is the easiest way to get started.
 
-## Step 2: Exchanges API
+## Overview
+
+At this early stage, the AA Platform along with existing trading bots templates solve several main issues involving algorithmic trading:
+
+* Infrastructure to run bots in the cloud;
+* Crucial trades and volumes data;
+* Connection with exchanges, placement and handling of orders.
+
+This leaves the Dev Team free to focus in the creative side of things: coming up with and implementing a trading strategy.
+
+In its current version, the AA Platform provides an object (platform) containing several other objects:
+
+* context: keeps historical information about what the bot did on previous executions along with current bot status;
+* datasource: preloads ready-to-consume data comprised of candlesticks and stair patterns;
+* assistant: opens, closes and moves positions;
+* processDatetime: keeps official execution time, to be recorded in logs and used to retrieve stared data.
+
+## Exchanges API
 
 The AA Platform places orders on exchanges through the use of APIs. You will need to create an API and configure your bot to use it.
 
