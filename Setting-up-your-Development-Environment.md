@@ -85,6 +85,10 @@ There are several bots to play with and many more will be available soon from De
 
 ## Step 5: Test Run
 
+### Request Connection String
+
+Send us an email to feedback@advancedalgos.org to request connection strings for existing bots. You will receive an instructional email explaining how to use them.
+
 ### Configure Which Bot to Run
 
 > NOTE: For the sake of this guide, we will use Microsoft Visual Studio as the IDE of choice. However, the platform is IDE-agnostic, thus you should be able to use your preferred IDE, as usual. If that is the case, we would be thrilled if you could share screen shots of your own set up so that we can add them here. Send any contributions to feedback@advancedalgos.com or submit a pull request with a new version of this page incorporating them.
