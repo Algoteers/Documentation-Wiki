@@ -107,8 +107,6 @@ In the example above, the bot has two processes: _Multi-Period-Daily_ and _Multi
 
 [[https://github.com/AdvancedAlgos/Documentation/blob/master/Media/Dev-Teams-Getting-Sarted-Guide/Visual-Studio-02.png]]
 
-Also, make sure you have the proper path in the Working directory attribute and save the config file. We are now ready to execute.
-
 ### Execute
 
 Once running, the process should call the command prompt and start showing some activity:
