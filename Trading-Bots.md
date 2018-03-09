@@ -4,20 +4,52 @@ The idea is to start from a solid base: cloning an existing bot and working on t
 
 ## Overview
 
-At this early stage, the AA Platform along with existing trading bots templates solve several main issues involving algorithmic trading:
+At this early stage, the AA Platform along with existing trading bots templates solve several of the main issues around algorithmic trading:
 
 * Infrastructure to run bots in the cloud;
-* Crucial trades and volumes data;
+* Crucial historical and live trades and volumes data;
 * Connection with exchanges, placement and handling of orders.
 
 This leaves the Dev Team free to focus in the creative side of things: coming up with and implementing a trading strategy.
 
 In its current version, the AA Platform provides an object (platform) containing several other objects:
 
-* context: keeps historical information about what the bot did on previous executions along with current bot status;
-* datasource: preloads ready-to-consume data comprised of candlesticks and stair patterns;
+* datasource: preloads ready-to-consume data comprised of candlesticks, volumes and stair patterns;
 * assistant: opens, closes and moves positions;
-* processDatetime: keeps official execution time, to be recorded in logs and used to retrieve stared data.
+* processDatetime: keeps official execution time, to be recorded in logs and used to retrieve stored data.
+
+The overall strategy when working with trading bots can be summarized in the following bullet points:
+
+* Bots are executed every one minute. 
+* Each time the bot runs, it first needs to understand the context of the current execution. Does it have any open positions? Have orders placed at an earlier time been filled?
+* Then the bot embarks in the calculations required by its trading strategy. At this point in time, there are very few indicators offering processed information. As a consequence, the bot needs to do all calculations internally. Almost all Technical Analysis indicators are calculated from trades and volume data. Their formulas are in the pubic domain and even code is readily available if you search around. You are free to use open source code within your bot's code.
+* Once calculations are performed, the bot decides what to do, and uses the platform to place orders on the exchange.
+
+## Particulars of Cloning a Trading Bot
+
+We covered [[elsewhere|Starting out Your Own Bot]] how to clone a bot and set it up to build your own bot on top of it. Please follow the same guidelines when cloning a trading bot. 
+
+In addition, you need to know the following:
+
+### Running Mode
+
+When you run a trading bot in your local environment you can configure the AACloudPlatform to run it either continuously or only once. This is to avoid the consequences of stopping a trading bot forcefully, which may cause the bot to loose sync with the exchange (open positions may not be taken into account in subsequent runs).
+
+By now you should be familiar with the configuration at _this.vm.config.json_:
+
+```
+{
+  "bot": {
+    "path": "../AAName-Trading-Bot"
+  },
+  "stopGracefully": "false"
+}
+
+```
+
+What we haven't discussed so far is the _stopGracefully_ parameter. When the value is _false_ the platform will run the bot continuously. When the value is _true_ the platform runs the bot once and stops it afterwards.
+
+If you ran the bot with _"stopGracefully": "false"_ and need to stop the bot, then simply go back to the config, change the parameter to _true_, save the file and wait. Upon the next run, the bot will be stopped.
 
 ## Exchanges API
 
@@ -60,6 +92,7 @@ Create a folder named _API-Keys_ at the same level of the platform's repository 
 e.g.: AAMariam.Poloniex.json
 
 > NOTE: Make sure the folder and file doesn't accidentally end up in GitHub! Your API KEYs should be kept secret! 
+
 
 
 
