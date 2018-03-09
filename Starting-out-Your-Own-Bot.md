@@ -30,24 +30,74 @@ Next, delete the hidden _.git_ folder to eliminate the relation to the original 
 
 ### Add GitHub Repository
 
-Now is a good time to go to GitHub and add a new local repository within your own organization. Make sure you include a concise description of what the bot does.
+Now is a good time to go to GitHub and add a new local repository within your own organization. Name the repository after your bot (use the exact same name as the root folder). Make sure you include a concise description of what the bot does. Upload the files in your local repository to the GitHub repository so that GitHub takes control of the association between your local files and the ones at GitHub.
+
+### Request a Storage Account
+
+Bots store data in the cloud. for the time being, the process for opening a storage account for your bot is manul. Please send us a request including your bot's name to feedback@advancedalgos.org. When the request is processed, you will get a text file with a string similar to the following:
+
+```
+  "storage": {
+    "sas": "?sv=2017-07-29&ss=f&srt=sco&sp=r&se=2018-12-30T23:44:52Z&st=2018-02-25T15:44:52Z&spr=https&sig=0pzOTcVAAOkgH7C4KmA1Rbs15kyjvVC1XFCsLQYjXKU%3D",
+    "fileUri": "https://botname.file.core.windows.net"
+  }
+```
+
+You will use this string in the next step...
 
 ### Configure Solution
 
-Next, open the recently renamed solution in Visual Studio and make the following changes:
+Next, open the recently renamed solution in your IDE and make the following changes:
 
 * In the Solution Explorer window:
   - You may want to rename one of the existing processes (the one you are planning to use).
   - Delete the remaining original unused processes, if any.
-* Open _this.bot.config.json_ and update:
-  - *displayName* (your bot's name without the AA prefix)
-  - *codeName* (name with the AA prefix; e.g. AAMariam)
-  - *type* (change if appropriate)
-  - *version* (start with 1.0.0)
-  - *devTeam* (your organization's name)
-  - *dataSetVersion* (different versions of bots may use different versions of datasets"
-  - The process name in case you decided to change it
-  - Delete the config for any unused processes
+
+* Open _this.bot.config.json_. This is the bit of the configuration file that concerns the AACloudPlatform:
+
+```
+"displayName": "ExampleBot",
+  "codeName": "AAExampleBot",
+  "type": "Trading",
+  "version": "1.0.0",
+  "devTeam": "AAExampleOrg",
+  "dataSetVersion": "dataSet.V1",
+  "processes": [
+    {
+      "name": "Trading-Process",
+      "description": "Simple trading strategy to be used as a template.",
+      "startMode": {
+        "allMonths": {
+          "run": "false",
+          "minYear": "",
+          "maxYear": ""
+        },
+        "oneMonth": {
+          "run": "false",
+          "year": "",
+          "month": ""
+        },
+        "noTime": {
+          "run": "true"
+        }
+      },
+      "executionWaitTime": 60000,
+      "retryWaitTime": 10000
+    }
+```
+
+You need to update that segment of the config with the following things in mind:
+
+ - *displayName* (your bot's name without the AA prefix)
+ - *codeName* (name with the AA prefix; e.g. AAMariam)
+ - *type* (change if appropriate)
+ - *version* (start with 1.0.0)
+ - *devTeam* (your organization's name)
+ - *dataSetVersion* (different versions of bots may use different versions of datasets"
+ - The process name in case you decided to change it
+ - Delete the config for any unused processes
+
+Now scroll down to the bottom of the config and replace the string concerning to the storage account with the one you got from us on the [[previous title|#Request a Storage Account]].
 
 ## Step 3: Start Coding
 
