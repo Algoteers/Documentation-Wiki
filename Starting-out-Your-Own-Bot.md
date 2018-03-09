@@ -34,11 +34,11 @@ Now is a good time to go to GitHub and add a new local repository within your ow
 
 ### Request a Storage Account
 
-Bots store data in the cloud. for the time being, the process for opening a storage account for your bot is manul. Please send us a request including your bot's name to feedback@advancedalgos.org. When the request is processed, you will get a text file with a string similar to the following:
+Bots store data in the cloud. For the time being, the process for opening a storage account for your bot is manual. Please send us a request including your bot's name to feedback@advancedalgos.org. When the request is processed, you will get a text file with a string similar to the following:
 
 ```
   "storage": {
-    "sas": "?sv=2017-07-29&ss=f&srt=sco&sp=r&se=2018-12-30T23:44:52Z&st=2018-02-25T15:44:52Z&spr=https&sig=0pzOTcVAAOkgH7C4KmA1Rbs15kyjvVC1XFCsLQYjXKU%3D",
+    "sas": "?sv=2017-07-29&ss=f&srt=sco&sp=r&se=2018-12-30T23:44:52Z&st=2018-02-25T15:44:52Z&spr=https&sig=0pzOTcaRdfYgH7C4KmA1Rbs15kyjvVC1XFCsLQYjXKU%3D",
     "fileUri": "https://botname.file.core.windows.net"
   }
 ```
