@@ -47,19 +47,19 @@ Once you create your key, the system will present it as follows...
 
 ### Creating an API Key File
 
-Next, you will use the information in the API Key to a create a file with the following structure:
+Next, you will use the information in the API Key to a create a flat file with the following structure:
 
 ```
 { "Key" : "6HS4YUEB-865UY9W4-KGHEHHJ-GH72ETG1", "Secret" : "1a3529851a05439asdasdw63426378ggd65701ac4a5d53c4859aa3511a8aa65acbd7e713bba755d0b1591ebe3a7618a71393ef4d3d11310628e1db"}
 ```
 
-Save the file in your local environment. Make sure you place it somewhere outside the folder structure you are using for your repositories to make sure the file doesn't accidentally end up in GitHub. Use the following naming convention:
+Create a folder named _API-Keys_ at the same level of the platform's repository and save the file using the following naming convention:
 
 "**AA**" + **BotName** + "**.**" + **ExchangeName** + "**.json**"
 
 e.g.: AAMariam.Poloniex.json
 
-
+> NOTE: Make sure the folder and file doesn't accidentally end up in GitHub! Your API KEYs should be kept secret! 
 
 
 
