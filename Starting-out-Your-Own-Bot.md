@@ -1,6 +1,6 @@
 ## Step 1: A Bit of Planning
 
-First thing to do is understanding what you wish to do and deciding which of the existing bots resembles the most to what your own bot should end up looking like. 
+First thing to do is understanding what you wish to do and deciding which of the existing bots resembles the most to what your own bot should end up looking like.
 
 Are you doing an indicator bot? A trading bot? What kind of process will your bot involve? What kind of data output should your bot have? Which of the existing bots is the most similar to your requirements?
 
@@ -8,7 +8,7 @@ Are you doing an indicator bot? A trading bot? What kind of process will your bo
 
 ### Copy and Rename Bot
 
-Once you have identified the bot that is the most similar to yours, clone the corresponding repository and --once in your local machine-- copy and paste the repository’s root folder, renaming it with the name of your new bot. 
+Once you have identified the bot that is the most similar to yours, clone the corresponding repository and --once in your local machine-- copy and paste the repository’s root folder, renaming it with the name of your new bot.
 
 Make sure you follow the naming convention using the following string:
 
@@ -20,7 +20,7 @@ e.g.: _AAOlivia-Indicator-Bot_
 
 ### Rename Solution
 
-Now rename the solution using the following syntax: “**AA**”+“**BotName**”+“**-TypeOfBot-**”+“**Bot**”+“**.sln**”
+[*Optional: VS IDE only] Now rename the solution using the following syntax: “**AA**”+“**BotName**”+“**-TypeOfBot-**”+“**Bot**”+“**.sln**”
 
 e.g.: _AAOlivia-Indicator-Bot.sln_
 
@@ -30,7 +30,7 @@ Next, delete the hidden _.git_ folder to eliminate the relation to the original 
 
 ### Add GitHub Repository
 
-Now is a good time to go to GitHub and add a new local repository within your own organization. Name the repository after your bot (use the exact same name as the root folder). Make sure you include a concise description of what the bot does. Upload the files in your local repository to the GitHub repository so that GitHub takes control of the association between your local files and the ones at GitHub.
+Now is a good time to go to GitHub and [add a new local repository](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/) within your own organization. Name the repository after your bot (use the exact same name as the root folder). Make sure you include a concise description of what the bot does. Upload the files in your local repository to the GitHub repository so that GitHub takes control of the association between your local files and the ones at GitHub.
 
 ### Request a Storage Account
 
@@ -45,13 +45,7 @@ Bots store data in the cloud. For the time being, the process for opening a stor
 
 You will use this string in the next step...
 
-### Configure Solution
-
-Next, open the recently renamed solution in your IDE and make the following changes:
-
-* In the Solution Explorer window:
-  - You may want to rename one of the existing processes (the one you are planning to use).
-  - Delete the remaining original unused processes, if any.
+### Configure Bot
 
 * Open _this.bot.config.json_. This is the bit of the configuration file that concerns the AACloudPlatform:
 
@@ -98,6 +92,12 @@ You need to update that segment of the config with the following things in mind:
  - Delete the config for any unused processes
 
 Now scroll down to the bottom of the config and replace the string concerning to the storage account with the one you got from us on the previous title. Save the file when you are done.
+
+[*Optional: VS IDE only] Next, open the recently renamed solution in your IDE and make the following changes:
+
+* In the Solution Explorer window:
+  - You may want to rename one of the existing processes (the one you are planning to use).
+  - Delete the remaining original unused processes, if any.
 
 ### Configure the AACloudPlatform
 
@@ -174,7 +174,7 @@ Clone the [[AAPlatform|https://github.com/AdvancedAlgos/AAPlatform]] repository 
           "target": "Timeline"
         },
         {
-          "description": "Plots trading decitions in an easy to understand way.",
+          "description": "Plots trading decisions in an easy to understand way.",
           "repo": "Plotters-Trading",
           "moduleName": "Details",
           "target": "Timeline"
@@ -185,8 +185,6 @@ Clone the [[AAPlatform|https://github.com/AdvancedAlgos/AAPlatform]] repository 
 
 Copy the piece of code and replicate it immediately below the closing key. Modify the pasted code to incorporate the details of your own GitHub organization and your own bots.
 
-> You will notice the configuration describes _plotters_. We haven't discussed those yet, so simply delete the related segments. 
+> You will notice the configuration describes _plotters_. We haven't discussed those yet, so simply delete the related segments.
 
 Once you are finished, commit the changes and submit a pull request. Someone in the AdvancedAlgos Organization will analyze your request and pull it into the main branch's code if everything looks right.
-
-
